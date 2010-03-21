@@ -1,0 +1,12 @@
+django-oida - [O]nly [I]f [D] [A]vailable
+
+Oida provides you with a set of tools to execute parts of your code only
+if a specified application is installed.
+
+If your "django site" is powered by a core set of applications and you
+add or remove several others to bundle up editions of it, you might end
+up commenting and uncommenting lines in a shared code base. Although it
+might be a good idea to keep your code as decoupled as possible, some 
+parts are tricky: Think of the root URL configuration or enhanced admin 
+views for models (If you have better solutions for that, please drop me
+a note).
