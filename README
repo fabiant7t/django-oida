@@ -1,6 +1,6 @@
-=========================================
-django-oida - [O]nly [I]f [D] [A]vailable
-=========================================
+==================================================
+django-oida - [O]nly [I]f [D]ependency [A]vailable
+==================================================
 
 Oida provides you with a set of tools to execute parts of your code only
 if a specified application is installed.
