@@ -10,3 +10,17 @@ might be a good idea to keep your code as decoupled as possible, some
 parts are tricky: Think of the root URL configuration or enhanced admin 
 views for models (If you have better solutions for that, please drop me
 a note).
+
+
+Templatetags
+
+if_app: An if statement that validates to True if an app is loaded.
+
+Example (the else tag is optional):
+{% load apps %}
+
+{% if_app "tagging" %}
+<p>tagging is installed</p>
+{% else %}
+<p>tagging is not installed</p>
+{% endif_app %}
