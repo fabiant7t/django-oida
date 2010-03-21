@@ -1,4 +1,6 @@
+=========================================
 django-oida - [O]nly [I]f [D] [A]vailable
+=========================================
 
 Oida provides you with a set of tools to execute parts of your code only
 if a specified application is installed.
@@ -13,7 +15,7 @@ a note).
 
 
 Templatetags
-
+============
 if_app: An if statement that validates to True if an app is loaded.
 
 Example (the else tag is optional):
