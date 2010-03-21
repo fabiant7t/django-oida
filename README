@@ -20,9 +20,9 @@ if_app: An if statement that validates to True if an app is loaded.
 
 Example (the else tag is optional):
 {% load apps %}
-
+...
 {% if_app "tagging" %}
-<p>tagging is installed</p>
+    <p>tagging is installed</p>
 {% else %}
-<p>tagging is not installed</p>
+    <p>tagging is not installed</p>
 {% endif_app %}
