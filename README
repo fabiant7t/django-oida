@@ -51,4 +51,4 @@ from oida.decorators import if_app()
 ...
 @if_app('tagging')
 def my_method():
-    print 'yay, stagging is installed'
+    print 'yay, tagging is installed'
