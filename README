@@ -30,14 +30,16 @@ Example (the else tag is optional):
 
 Method
 =======
-Let's assume that you want to add a reverse generic relation showing all
-tagged item objects for a Model, but only if the tagging app is installed:
+Let's assume that you want to add a reverse generic relation showing
+alltagged item objects for a Model, but only if the tagging app is 
+installed:
 
 from oida import is_app_installed
 ...
 if is_app_installed('tagging'):
     tagged_items = generic.GenericRelation('tagging.TaggedItem')
-    # If you really want to do that, consider using tagging.fields.TagField
+    # If you really want to do that, consider using 
+    # tagging.fields.TagField
 
 
 Decorator
