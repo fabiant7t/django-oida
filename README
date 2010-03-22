@@ -29,7 +29,7 @@ Example (the else tag is optional):
 
 
 Method
-=======
+======
 Let's assume that you want to add a reverse generic relation showing
 alltagged item objects for a Model, but only if the tagging app is 
 installed:
