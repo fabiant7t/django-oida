@@ -2,6 +2,8 @@ from django import template
 from django.core.exceptions import ImproperlyConfigured
 from django.db import models
 
+from oida.decorators import is_app_installed
+
 
 def do_if_app(parser, token):
     """
@@ -36,11 +38,9 @@ class IfAppTemplateNode(template.Node):
         self.nodelist_false = nodelist_false
 
     def render(self, context):
-        try:
-            app = models.get_app(self.app_name)
-        except ImproperlyConfigured:
-            return self.nodelist_false.render(context)
-        return self.nodelist_true.render(context)
+        if is_app_installed(self.app_name):
+            return self.nodelist_true.render(context)
+        return self.nodelist_false.render(context)
 
 
 register = template.Library()

@@ -26,3 +26,27 @@ Example (the else tag is optional):
 {% else %}
     <p>tagging is not installed</p>
 {% endif_app %}
+
+
+Method
+=======
+Let's assume that you want to add a reverse generic relation showing all
+tagged item objects for a Model, but only if the tagging app is installed:
+
+from oida import is_app_installed
+...
+if is_app_installed('tagging'):
+    tagged_items = generic.GenericRelation('tagging.TaggedItem')
+    # If you really want to do that, consider using tagging.fields.TagField
+
+
+Decorator
+=========
+If you have a method, you can decorate it with the
+if_app_installed decorator.
+
+from oida.decorators import if_app()
+...
+@if_app('tagging')
+def my_method():
+    print 'yay, stagging is installed'

@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='django-oida',
-    version='0.1',
+    version='0.2',
     description='A set of tools to execute parts of your code only if a '\
         'specified application is installed.',
     long_description=open('README').read(),
