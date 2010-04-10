@@ -31,7 +31,7 @@ Example (the else tag is optional):
 Method
 ======
 Let's assume that you want to add a reverse generic relation showing
-alltagged item objects for a Model, but only if the tagging app is 
+all tagged item objects for a Model, but only if the tagging app is 
 installed:
 
 from oida import is_app_installed
@@ -47,7 +47,7 @@ Decorator
 If you have a method, you can decorate it with the
 if_app_installed decorator.
 
-from oida.decorators import if_app()
+from oida.decorators import if_app
 ...
 @if_app('tagging')
 def my_method():
